@@ -1,6 +1,38 @@
 ../pugraph
+├── c_graph.c
+├── Circles.png
 ├── firstmap.c
+├── fpugraph.c ---> example of geometric shapes drawing using gnu libplot
+├── LICENSE
 ├── Makefile
 └── README
 
-0 directories, 3 files
+
+#to compile
+make
+#to run
+./fpugraph | okular -
+
+#program fpugraph.c
+
+This is a simple program creating a 2D plot, done with plotter like graphics technique, 
+using geometric primitives, circles, points, lines, segments, can be plotted and labels can be added. 
+It is pure c code and can be compiled on unix/linux gcc and mingw gcc, 
+you need to compile the libplot gnu plotutils library and link to them.
+See that when you are able to compute functions and
+ plot parabola, hyperbola, circles and ellipsis and do floating point (double) real number 
+computations (and even complex numbers, as couples of double) 
+you can do everything about orbits, and related explanation graphics.
+some part can be a bit cryptic, since the function name of libplot libraries 
+are not so easy to understand soon the meaning, 
+but I will try to improve readibility with higher level functions and explicative names.
+
+it uses plotter-like functions not so different from postcript calls and also
+something similar to the turtle graphics many people have seen an tried on python examples 
+coloured country of the world flags plot and other, 
+but using c language it is much more efficient and fast in producing graphics 
+and doing math computations in the same portion of code as well.
+Turtle graphics is very easy to understand, that's why it is used also to teach computing to kids, 
+in any case vectorial graphics it is quite important and used also in many applications, 
+included science.
+
