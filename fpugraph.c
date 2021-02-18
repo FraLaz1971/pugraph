@@ -63,9 +63,7 @@ int main (int argc, char **argv)
         fprintf (stderr, "%s: Couldn’t open Plotter\n", argv[0]);
         return 1;
     }
-    pl_fspace_r (plotter, 0.0, 0.0, 1000.0, 1000.0); /* set coord. system */
-    pl_flinewidth_r (plotter, 0.25);    /* set line thickness */
-    pl_erase_r (plotter);    /* erase graphics display */
+
     draw_test_circles(plotter);
 
     if (pl_closepl_r (plotter) < 0)    /* close Plotter */
