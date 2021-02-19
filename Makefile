@@ -1,9 +1,9 @@
 CC = gcc
 RM = rm -f
-PUHOME = /home/francesco/Software/plotutils-2.6
+PUHOME = /USERS4/sax/lazzarotto
 CPPFLAGS = -I$(PUHOME)/include
-CFLAGS = -I$(PUHOME)/lib
-LDFLAGS = -L$(PUHOME)/lib
+CFLAGS = -I$(PUHOME)/lib64
+LDFLAGS = -L$(PUHOME)/lib64
 PU_LIBS = -lplot -lpng -lz -lm
 X11_LIBS = -lXaw -lXmu -lXt -lSM -lICE -lXext -lX11
 LIBS = $(PU_LIBS) $(X11_LIBS)

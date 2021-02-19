@@ -1,4 +1,4 @@
-../pugraph
+pugraph
 ├── c_graph.c
 ├── Circles.png
 ├── firstmap.c
@@ -12,6 +12,11 @@
 make
 #to run
 ./fpugraph | okular -
+# or saving to a ps file
+./fpugraph > out.ps; gimp out.ps
+# output file format can be changed from postscript to png, pnm, svg, and plotted
+# on the screen using Xorg ...
+
 
 #program fpugraph.c
 
